@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * This class allows to generate the links between a vertice and an edge
  * 
- * @author AARON RM
+ * @author Cris
  *
  */
 
@@ -49,16 +49,6 @@ public class Graph<X> {
     }
 
     
-    /**
-	 * Permite generar relaciones entre los v�rtices (que deben ser existentes) y
-	 * las aristas
-	 * 
-	 * @param id_arista           ID que se le dará a las aristas
-	 * @param id_lista_vertices_A ID del vértice del cuál se parte
-	 * @param id_lista_vertices_B ID del vértice de llegada
-	 * @param distanciaTrayecto   La distancia que hay entre el Vértice de partida
-	 *                            y el v�rtice de llegada
-	 */
 	public void nuevaArista(String id_arista, int id_lista_vertices_A, int id_lista_vertices_B,double distanciaTrayecto) {
 
 		Edge arista = new Edge(id_arista, vertices.get(id_lista_vertices_A),
